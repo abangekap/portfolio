@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Klinik Tani: A Digital Consultation Channel for Indonesian Farmers — Eka Prayoga</title>
+<meta name="description" content="Case study: turning farmer consultations into a trackable, product-recommending flow with Klinik Tani, reaching 94% consultation-to-purchase conversion." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
+</head>
+<body>
+
+<div class="page-curtain" data-page-curtain aria-hidden="true" style="--curtain-bg: #E2EF72; --curtain-color: #212121;">
+  <div class="page-curtain__panel"></div>
+  <span class="page-curtain__label" data-page-curtain-label>Case Study</span>
+</div>
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var curtain = document.querySelector('[data-page-curtain]');
+    if (!curtain) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        curtain.classList.add('is-leaving');
+      });
+    });
+  })();
+</script>
+
+<header class="site-nav">
+  <nav class="site-nav__pill" aria-label="Primary">
+    <a href="index.html" class="site-nav__link" data-nav-link>Halo!</a>
+    <a href="work.html" class="site-nav__link is-active" data-nav-link>Work</a>
+    <a href="about.html" class="site-nav__link" data-nav-link>About</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section case-detail container">
+
+    <div class="case-detail__meta">
+      <span class="case-study__chip">Product Design</span>
+      <span class="case-study__chip">2024</span>
+    </div>
+
+    <h1 class="case-detail__title">Klinik Tani: A Digital Consultation Channel for Indonesian Farmers</h1>
+
+    <div class="case-detail__banner">
+      <img src="assets/images/case-consult-banner.png" alt="Klinik Tani consultation app screens preview" />
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-puzzle-piece.svg" alt="" /></div>
+        <h2 class="section-heading">Context</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>Farmers face a wide range of problems in the field every day, from pest infestations to suboptimal crop productivity. Their main source of answers has traditionally been their local farming groups, but the results and satisfaction with that advice were often inadequate.</p>
+          <p>Access to professional agronomists is also limited, as only large agribusiness companies can afford a dedicated agronomist.</p>
+          <p>Field research reinforced this need. Interestingly, farmers' core problem was rarely about which product to buy, since fertilizer and pesticides are already routine purchases they know well. What was often missing was guidance on the right dosage and application method for their specific field conditions.</p>
+          <p>From this, Gokomodo saw an opportunity to address two needs at once: genuinely helping farmers optimize how they use products they already buy, while turning the consultation moment into an opportunity to direct that purchase to Gokomart.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-tube.svg" alt="" /></div>
+        <h2 class="section-heading">Process and Research</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>Field research was conducted using surveys and interviews during a farmers gathering event. The survey reached <strong>388 participants</strong>, while in-depth interviews were held with <strong>10 farming group leaders</strong>.</p>
+          <p>The research surfaced three recurring problems among farmers:</p>
+          <div class="case-detail__tags">
+            <span class="case-detail__tag">pest infestations</span>
+            <span class="case-detail__tag">yellowing leaves</span>
+            <span class="case-detail__tag">poor harvest yields</span>
+          </div>
+          <p>These consistently came up as the most common issues farmers struggled to resolve on their own or through their farming group.</p>
+          <p>Interviews specifically targeted farming group leaders rather than individual farmers, since leaders are regularly approached by their members with a wide range of field problems. This gave the team a faster way to surface recurring patterns across many farmers through fewer conversations, rather than needing a much larger number of individual interviews to reach the same breadth of insight.</p>
+          <p>From this research, two core needs were identified:</p>
+          <div class="case-detail__list">
+            <div class="case-detail__list-item">
+              <span class="case-detail__list-number" aria-hidden="true">1</span>
+              <p class="case-detail__list-text">Farmers needed access to credible agronomist expertise, not just opinions from fellow farmers</p>
+            </div>
+            <div class="case-detail__list-item">
+              <span class="case-detail__list-number" aria-hidden="true">2</span>
+              <p class="case-detail__list-text">The business needed a way to turn the moment a farmer has a problem into a relevant product opportunity, rather than hard selling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-trading-card.svg" alt="" /></div>
+        <h2 class="section-heading">Pivot and Trade-offs</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <h3>Limited Agronomist Supply vs Nationwide Farmer Demand</h3>
+          <p>The number of available agronomists is far smaller than the spread of farmers who need consultations, and demand cannot always be served in real time via video call.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> Rather than limiting access to only the farmers lucky enough to get a video call slot, consultation forms are still accepted as demand even when no agronomist is available. Agronomists then respond with a diagnosis asynchronously, without requiring a real-time session. This trades away the instant experience to make sure no farmer's issue goes unaddressed simply due to limited supply.</p>
+        </div>
+        <div class="case-detail__box">
+          <h3>Unstable Connectivity in Rural Areas</h3>
+          <p>Video call as the primary consultation channel faces a real challenge: many farming regions have unstable internet connectivity.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> When the connection drops mid-consultation, the system is designed so the process doesn't fail entirely. The agronomist switches to delivering the diagnosis via text instead. This decision prioritizes resolving the farmer's problem over the quality of the communication medium, acknowledging that field infrastructure can't be assumed to be as consistent as it is in major cities.</p>
+        </div>
+      </div>
+    </div>
+
+    <img class="case-detail__showcase" src="assets/images/case-consult-showcase.png" alt="Collage of Klinik Tani consultation screens: video call, diagnosis, and product recommendation flow" />
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-goal.svg" alt="" /></div>
+        <h2 class="section-heading">Result from 2024-2025</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <h3>Consultation Volume</h3>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-copy"><strong>1149</strong> total consultations from <strong>710 unique customers</strong></p>
+          </div>
+          <h3>Business Impact</h3>
+          <div class="case-detail__stats">
+            <div class="case-detail__stat">
+              <p class="case-detail__stat-value">94% conversion</p>
+              <p class="case-detail__stat-label">from consultation to product purchase</p>
+            </div>
+            <div class="case-detail__stat">
+              <p class="case-detail__stat-value">2.4% revenue contribution</p>
+              <p class="case-detail__stat-label">from Gokomart's total revenue</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-new-product.svg" alt="" /></div>
+        <h2 class="section-heading">Product Evolution Note</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>In mid 2026, Klinik Tani introduced AI powered chat consultation as the first layer of the consultation flow, replacing the earlier process that connected farmers directly to a human agronomist. Farmers now start their consultation with AI first. If the result isn't satisfactory, the system connects them to a human agronomist for further support.</p>
+          <img class="case-detail__image" src="assets/images/case-consult-ai-chat.png" alt="AI-powered chat consultation flow in the Klinik Tani app, showing the diagnosis handoff to a human agronomist" />
+          <p>This layered approach addresses the agronomist supply challenge identified early on. AI absorbs most of the consultation volume for relatively common cases, while human agronomists can focus on more complex ones. As with the previous flow, consultations still end with a relevant product recommendation, preserving Klinik Tani's dual purpose in this new channel.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> current AI model isn't yet able to handle complex questions well, so escalation to a human agronomist remains necessary as a fallback whenever a farmer finds the AI chat experience unsatisfactory. This is a deliberate decision not to fully replace human agronomists. AI is positioned as a first line filter for efficiency, not a total replacement, since farmers' trust in diagnosis quality remains the top priority.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Eka Prayoga.<br />No pixels were harmed in the making of this site.</p>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

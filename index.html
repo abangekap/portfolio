@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eka Prayoga — Product Designer</title>
+<meta name="description" content="Eka Prayoga, Product Designer currently at Gokomodo Indonesia. Portfolio, case studies and experience." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
+</head>
+<body>
+
+<div class="page-curtain" data-page-curtain aria-hidden="true">
+  <div class="page-curtain__panel"></div>
+  <span class="page-curtain__label" data-page-curtain-label>Halo!</span>
+</div>
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var curtain = document.querySelector('[data-page-curtain]');
+    if (!curtain) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        curtain.classList.add('is-leaving');
+      });
+    });
+  })();
+</script>
+
+<header class="site-nav">
+  <nav class="site-nav__pill" aria-label="Primary">
+    <a href="#home" class="site-nav__link is-active" data-nav-link>Halo!</a>
+    <a href="work.html" class="site-nav__link" data-nav-link>Work</a>
+    <a href="about.html" class="site-nav__link" data-nav-link>About</a>
+  </nav>
+</header>
+
+<main id="home">
+
+  <section class="hero container">
+    <p class="hero__greeting">
+      <span>Halo!</span>
+      <img class="hero__greeting-avatar" src="assets/images/hero-avatar-small.png" alt="Eka Prayoga" />
+      <span>I'm Eka</span>
+    </p>
+
+    <h1 class="hero__headline">
+      <span class="hero__headline-line">
+        <img class="hero__deco hero__deco--plus" src="assets/icons/ic-plus.svg" alt="" aria-hidden="true" />
+        Designer. Builder.
+      </span>
+      <span class="hero__headline-line hero__headline-line--two">
+        <span aria-hidden="true">Marath<img class="hero__deco hero__deco--star" src="assets/icons/ic-star.svg" alt="" />ner.</span>
+        <span class="sr-only">Marathoner.</span>
+        In that order.
+        <img class="hero__deco hero__deco--love" src="assets/icons/ic-love.svg" alt="" aria-hidden="true" />
+      </span>
+    </h1>
+
+    <p class="hero__tagline">Making design decisions faster than my marathon pace</p>
+
+    <div class="hero__status">
+      <span class="hero__status-dot">
+        <img src="assets/icons/status-dot.svg" alt="" />
+      </span>
+      <span>Currently open to new projects and opportunities</span>
+    </div>
+
+    <div class="hero__cta">
+      <a class="btn btn--solid" href="mailto:ekaprayoga69@gmail.com">
+        <img src="assets/icons/ic-mail.svg" alt="" />
+        Let's Work Together
+      </a>
+    </div>
+  </section>
+
+  <section class="clients section container" aria-label="Clients and companies">
+    <div class="clients__head">
+      <h2 class="section-heading">Clients and companies I've collaborated with</h2>
+    </div>
+    <div class="clients__track-wrap">
+      <ul class="clients__track">
+        <li class="clients__logo"><img src="assets/images/logo-gokomodo.png" alt="Gokomodo" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-astra.png" alt="Astra" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-toyota.png" alt="Toyota" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-komatsu.png" alt="Komatsu" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-united-tractors.png" alt="United Tractors" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-astratech.png" alt="ASTRAtech" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-docotel.png" alt="Docotel" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-meiwa.png" alt="PT. Meiwa Mold Indonesia" /></li>
+        <!-- duplicated for seamless marquee loop -->
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-gokomodo.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-astra.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-toyota.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-komatsu.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-united-tractors.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-astratech.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-docotel.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-meiwa.png" alt="" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="case-study section container" id="work" aria-label="Selected work">
+    <div class="case-study">
+      <div class="case-study__card">
+        <div class="case-study__viewport">
+          <div class="case-study__track" data-carousel-track>
+
+            <article class="case-study__slide case-study__body">
+              <div class="case-study__banner">
+                <img src="assets/images/banner-case-study.png" alt="Gokomodo loyalty app screens preview" />
+              </div>
+              <div class="case-study__head">
+                <div class="case-study__attrs">
+                  <div class="case-study__labels">
+                    <span class="case-study__chip">Product Design</span>
+                    <span class="case-study__chip">2023</span>
+                  </div>
+                  <h3 class="case-study__title">Building a Digital Loyalty Ecosystem for Indonesian Farmers</h3>
+                </div>
+                <a class="btn case-study__cta" href="case-study-gokomodo.html">
+                  See Case Study
+                  <img src="assets/icons/arrow-right.svg" alt="" />
+                </a>
+              </div>
+            </article>
+
+            <article class="case-study__slide case-study__body">
+              <div class="case-study__banner">
+                <img src="assets/images/case-consult-banner.png" alt="Klinik Tani consultation app screens preview" />
+              </div>
+              <div class="case-study__head">
+                <div class="case-study__attrs">
+                  <div class="case-study__labels">
+                    <span class="case-study__chip">Product Design</span>
+                    <span class="case-study__chip">2024</span>
+                  </div>
+                  <h3 class="case-study__title">Klinik Tani: A Digital Consultation Channel for Indonesian Farmers</h3>
+                </div>
+                <a class="btn case-study__cta" href="case-study-klinik-tani.html">
+                  See Case Study
+                  <img src="assets/icons/arrow-right.svg" alt="" />
+                </a>
+              </div>
+            </article>
+
+            <article class="case-study__slide case-study__body">
+              <div class="case-study__banner">
+                <img src="assets/images/case-pawsrangers-banner.png" alt="PawsRangers.ID logo design preview" />
+              </div>
+              <div class="case-study__head">
+                <div class="case-study__attrs">
+                  <div class="case-study__labels">
+                    <span class="case-study__chip">Brand Identity</span>
+                    <span class="case-study__chip">2024</span>
+                  </div>
+                  <h3 class="case-study__title">PawsRangers.ID: Logo Design for a Pet-Guardian Vet Service</h3>
+                </div>
+                <div class="case-study__soon">
+                  <button type="button" class="case-study__soon-cta" aria-disabled="true" aria-describedby="soon-tooltip-pawsrangers">
+                    Coming Soon
+                    <img src="assets/icons/ic-lock.svg" alt="" />
+                  </button>
+                  <span class="case-study__tooltip" role="tooltip" id="soon-tooltip-pawsrangers">Oops, this one's still brewing! Meanwhile, feel free to snoop around my other projects.</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-study__slide case-study__body">
+              <div class="case-study__banner">
+                <img src="assets/images/case-whatsapp-banner.png" alt="WhatsApp ordering funnel screens preview" />
+              </div>
+              <div class="case-study__head">
+                <div class="case-study__attrs">
+                  <div class="case-study__labels">
+                    <span class="case-study__chip">Product Design</span>
+                    <span class="case-study__chip">2025</span>
+                  </div>
+                  <h3 class="case-study__title">Turning WhatsApp Orders into a Trackable Funnel</h3>
+                </div>
+                <a class="btn case-study__cta" href="case-study-whatsapp-funnel.html">
+                  See Case Study
+                  <img src="assets/icons/arrow-right.svg" alt="" />
+                </a>
+              </div>
+            </article>
+
+            <article class="case-study__slide case-study__body">
+              <div class="case-study__banner">
+                <img src="assets/images/case-gokomart-banner.png" alt="Gokomart brand refresh preview" />
+              </div>
+              <div class="case-study__head">
+                <div class="case-study__attrs">
+                  <div class="case-study__labels">
+                    <span class="case-study__chip">Brand Identity</span>
+                    <span class="case-study__chip">2026</span>
+                  </div>
+                  <h3 class="case-study__title">Gokomart, a New Face for the Modern Agri Input Store</h3>
+                </div>
+                <div class="case-study__soon">
+                  <button type="button" class="case-study__soon-cta" aria-disabled="true" aria-describedby="soon-tooltip-gokomart">
+                    Coming Soon
+                    <img src="assets/icons/ic-lock.svg" alt="" />
+                  </button>
+                  <span class="case-study__tooltip" role="tooltip" id="soon-tooltip-gokomart">Oops, this one's still brewing! Meanwhile, feel free to snoop around my other projects.</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-study__slide case-study__body" aria-hidden="true" inert>
+              <div class="case-study__banner">
+                <img src="assets/images/banner-case-study.png" alt="" />
+              </div>
+              <div class="case-study__head">
+                <div class="case-study__attrs">
+                  <div class="case-study__labels">
+                    <span class="case-study__chip">Product Design</span>
+                    <span class="case-study__chip">2023</span>
+                  </div>
+                  <h3 class="case-study__title">Building a Digital Loyalty Ecosystem for Indonesian Farmers</h3>
+                </div>
+                <a class="btn case-study__cta" href="case-study-gokomodo.html" tabindex="-1">
+                  See Case Study
+                  <img src="assets/icons/arrow-right.svg" alt="" />
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+      <div class="case-study__dots" role="tablist" aria-label="Case studies">
+        <button type="button" class="case-study__dot case-study__dot--active" role="tab" aria-selected="true" aria-label="Case study 1" data-carousel-dot></button>
+        <button type="button" class="case-study__dot" role="tab" aria-selected="false" aria-label="Case study 2" data-carousel-dot></button>
+        <button type="button" class="case-study__dot" role="tab" aria-selected="false" aria-label="Case study 3" data-carousel-dot></button>
+        <button type="button" class="case-study__dot" role="tab" aria-selected="false" aria-label="Case study 4" data-carousel-dot></button>
+        <button type="button" class="case-study__dot" role="tab" aria-selected="false" aria-label="Case study 5" data-carousel-dot></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" aria-label="Highlights">
+    <div class="usp">
+      <div class="usp__card">
+        <p class="usp__title">7+ years</p>
+        <p class="usp__copy">from first hire to design leader, one messy iteration at a time.</p>
+      </div>
+      <div class="usp__card">
+        <p class="usp__title">5+ years</p>
+        <p class="usp__copy">leading design teams and (mostly) keeping the chaos organized.</p>
+      </div>
+      <div class="usp__card">
+        <p class="usp__title">70,000+</p>
+        <p class="usp__copy">end users who've bumped into something I've built, and counting.</p>
+      </div>
+      <div class="usp__card">
+        <p class="usp__title">Dual Expertise</p>
+        <p class="usp__copy">half product designer, half brand geek. Both halves show up to work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="about" aria-label="About">
+    <div class="statement">
+      <h2 class="statement__heading">I grow teams. Teams grow products.</h2>
+      <div class="statement__box">
+        <p>I used to think my job was making things look and feel right. Turns out it's making sure the people making those things feel right too. Everything else follows from there.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials section container" aria-label="Testimonials">
+    <div class="testimonials__head">
+      <h2 class="section-heading">Proven by Experience</h2>
+      <div class="testimonials__nav">
+        <button type="button" class="testimonials__arrow" data-testimonials-prev aria-label="Previous testimonial">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button type="button" class="testimonials__arrow" data-testimonials-next aria-label="Next testimonial">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="testimonials__track-wrap">
+      <ul class="testimonials__track" data-testimonials-track>
+        <li class="testimonial">
+          <div class="testimonial__inner">
+            <img class="testimonial__quote-mark" src="assets/icons/ic-quote-mark.svg" alt="" />
+            <p class="testimonial__body">I've worked with Eka for 3 years across hundreds of design sprints, and what stands out most is his leadership. He doesn't just produce great work himself, he holds his team to that same bar, which is a harder thing to build than individual talent. As a PM, that's what makes me trust the delivery, whether it comes from Eka directly or someone he's mentoring. He's built a team, not just a portfolio.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/avatar-abdul-mukhlis.png" alt="" />
+              <div>
+                <p class="testimonial__name">Abdul Mukhlis</p>
+                <p class="testimonial__role">Lead Product Manager at Gokomodo</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="testimonial">
+          <div class="testimonial__inner">
+            <img class="testimonial__quote-mark" src="assets/icons/ic-quote-mark.svg" alt="" />
+            <p class="testimonial__body">Mas Eka is a leader who leads by example. He prioritizes the growth of every team member, encouraging them to explore their abilities to the fullest. His technical and managerial experience is truly invaluable, paired with a great deal of empathy and humor that makes him easy to connect with across all divisions. Having Mas Eka around is an invaluable asset to any design team.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/avatar-irfan-yulianto.png" alt="" />
+              <div>
+                <p class="testimonial__name">Irfan Yulianto</p>
+                <p class="testimonial__role">Sr. Product Designer at Nesra.AI</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="testimonial">
+          <div class="testimonial__inner">
+            <img class="testimonial__quote-mark" src="assets/icons/ic-quote-mark.svg" alt="" />
+            <p class="testimonial__body">Two years with Mas Eka at Gokomodo was one of the best investments in my career. As a fresh graduate, I was mentored with clear feedback and a strong foundation in mindset from design thinking to team collaboration. That foundation helped me grow into a Senior Product Designer and stay relevant in today's AI era, because he taught how to think, not just shortcuts. Highly recommended as both a mentor and collaborator.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/avatar-febriandri-tiharsyah.png" alt="" />
+              <div>
+                <p class="testimonial__name">Febriandri Tiharsyah</p>
+                <p class="testimonial__role">Sr. Product Designer at Pintarnya</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="testimonial">
+          <div class="testimonial__inner">
+            <img class="testimonial__quote-mark" src="assets/icons/ic-quote-mark.svg" alt="" />
+            <p class="testimonial__body">It's always been a pleasure working with Mas Eka. His design taste, attention to detail, and speed in translating ideas into designs make collaboration effortless. He also challenges our thinking as PMs, and our discussions are always fun and productive because he's smart, critical, and brings valuable perspectives. Definitely one of the people I've learned the most from.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/avatar-aisyah-amira.png" alt="" />
+              <div>
+                <p class="testimonial__name">Aisyah Amira</p>
+                <p class="testimonial__role">Product Manager at Shopee</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="testimonial">
+          <div class="testimonial__inner">
+            <img class="testimonial__quote-mark" src="assets/icons/ic-quote-mark.svg" alt="" />
+            <p class="testimonial__body">Eka's designs are seriously impressive. Aesthetic, on-trend, and full of character every single time. The best part? Almost zero revisions needed, because he nails it on the first try. Working with him is smooth, fast, and the results always speak for themselves. Highly recommended for anyone who wants great design without the endless back-and-forth.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/avatar-galih-jati-kusumo.png" alt="" />
+              <div>
+                <p class="testimonial__name">Galih Jati Kusumo</p>
+                <p class="testimonial__role">Senior Engineer Expertise at TMMIN</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Eka Prayoga.<br />No pixels were harmed in the making of this site.</p>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

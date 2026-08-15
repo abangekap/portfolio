@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Turning WhatsApp Orders into a Trackable Funnel — Eka Prayoga</title>
+<meta name="description" content="Case study: moving Gokomart's WhatsApp-based ordering into a trackable RFQ-to-Quotation funnel, with a 100% admin response rate and 87% conversion." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
+</head>
+<body>
+
+<div class="page-curtain" data-page-curtain aria-hidden="true" style="--curtain-bg: #E2EF72; --curtain-color: #212121;">
+  <div class="page-curtain__panel"></div>
+  <span class="page-curtain__label" data-page-curtain-label>Case Study</span>
+</div>
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var curtain = document.querySelector('[data-page-curtain]');
+    if (!curtain) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        curtain.classList.add('is-leaving');
+      });
+    });
+  })();
+</script>
+
+<header class="site-nav">
+  <nav class="site-nav__pill" aria-label="Primary">
+    <a href="index.html" class="site-nav__link" data-nav-link>Halo!</a>
+    <a href="work.html" class="site-nav__link is-active" data-nav-link>Work</a>
+    <a href="about.html" class="site-nav__link" data-nav-link>About</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section case-detail container">
+
+    <div class="case-detail__meta">
+      <span class="case-study__chip">Product Design</span>
+      <span class="case-study__chip">2025</span>
+    </div>
+
+    <h1 class="case-detail__title">Turning WhatsApp Orders into a Trackable Funnel</h1>
+
+    <div class="case-detail__banner">
+      <img src="assets/images/case-whatsapp-banner.png" alt="WhatsApp ordering funnel app screens preview" />
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-puzzle-piece.svg" alt="" /></div>
+        <h2 class="section-heading">Context</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>Most of our customers are farmers who are used to being served in person. They'd come to the store, talk to an admin directly, and complete the transaction face-to-face. When online ordering was first introduced, that habit didn't just disappear. Transactions moved to WhatsApp instead, echoing the same personal, conversational interaction they already knew.</p>
+          <p>The problem was that everything happened inside the admin's personal chat, so the team had zero visibility into how the channel was actually performing. There was no data on how many requests came in, how many got a response, or how many actually converted into a transaction.</p>
+          <p>This is where the need for a more structured system came in: moving the process off WhatsApp (where the data was fragmented and untrackable) into a proper platform (the Gokomart Portal for admins, and an RFQ-to-Quotation flow in the customer app), so every stage of the funnel could finally be measured.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-tube.svg" alt="" /></div>
+        <h2 class="section-heading">Process and Research</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>This initiative came from the team itself, after recognizing that blind spot in the funnel. But the approach wasn't to replace WhatsApp with a conventional e-commerce flow outright because of the management still wasn't ready to display pricing openly. Beyond that, from the user's side, we chose to build on the existing behavior rather than fight it by keeping the same interaction pattern (ask first, admin responds, then transact) but moving it into the system, so every stage could be measured without forcing farmers to learn an entirely new way of shopping. The flow roughly looked like this:</p>
+          <img class="case-detail__image" src="assets/images/case-whatsapp-flow.png" alt="RFQ-to-Quotation flow screens: customer request, admin quotation on the Gokomart Portal, and customer payment confirmation" />
+          <p class="case-detail__callout"><strong>Key improvement from the previous version:</strong> Every stage now has a timestamp and status logged by the system, so funnel drop-off can finally be measured, including where customers are most likely to abandon, instead of remaining a black box.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-trading-card.svg" alt="" /></div>
+        <h2 class="section-heading">Pivot and Trade-offs</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <h3>Admin as a Bottleneck</h3>
+          <p>Unlike typical e-commerce where checkout happens automatically, this RFQ-to-Quotation flow depends on manual approval from the Gokomart admin at each store. The admin needs to check real stock availability and determine what promo can be applied.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> Physical stock at the store often isn't synced in real-time with the system, and admins sometimes need discretion to adjust promos based on customer or store conditions. This means transaction speed was intentionally sacrificed for stock data accuracy and operational flexibility on the ground.</p>
+        </div>
+        <div class="case-detail__box">
+          <h3>Time-Limited Quotation</h3>
+          <p>The quotation and payment link sent to the customer are valid for 24 hours from the time they're issued, not indefinitely.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> Once a quotation is created, the requested stock needs to be held temporarily to prevent two customers from competing over the same product while one of them is still weighing their decision. The 24-hour window was chosen as a middle ground between two competing needs: long enough to give farmers time to consider the purchase, but short enough that held stock doesn't hostage availability for other customers for too long, especially during planting season when demand can spike quickly.</p>
+        </div>
+      </div>
+    </div>
+
+    <img class="case-detail__showcase" src="assets/images/case-whatsapp-showcase.png" alt="Collage of Gokomart Portal and customer app screens across the RFQ-to-Quotation ordering flow" />
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-goal.svg" alt="" /></div>
+        <h2 class="section-heading">Result</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <h3>Business Impact</h3>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-label">Revenue Contribution</p>
+            <p class="case-detail__impact-copy">Online order's contribution to Gokomart's revenue grew <strong>by 4% in the first six months</strong> since this iteration was launched.</p>
+          </div>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-label">AVG. Transaction Amount</p>
+            <p class="case-detail__impact-copy">Average transaction value per member is <strong>8x higher</strong> than non-members.</p>
+          </div>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-label">Funnel Metrics</p>
+            <p class="case-detail__impact-copy">No more black box. The funnel is now clearly recorded, making it easier for management to make decisions.</p>
+            <div class="case-detail__stats">
+              <div class="case-detail__stat">
+                <p class="case-detail__stat-value">100%</p>
+                <p class="case-detail__stat-label">admin response rate</p>
+              </div>
+              <div class="case-detail__stat">
+                <p class="case-detail__stat-value">87%</p>
+                <p class="case-detail__stat-label">conversion rate</p>
+              </div>
+              <div class="case-detail__stat">
+                <p class="case-detail__stat-value">23 minutes</p>
+                <p class="case-detail__stat-label">avg. admin response time</p>
+              </div>
+              <div class="case-detail__stat">
+                <p class="case-detail__stat-value">Only 13% drop-off</p>
+                <p class="case-detail__stat-label">w/ just 7% window shopping</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Eka Prayoga.<br />No pixels were harmed in the making of this site.</p>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

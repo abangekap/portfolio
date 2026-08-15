@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Eka Prayoga</title>
+<meta name="description" content="About Eka Prayoga, a Product Design Manager with 7+ years turning complex problems into products people actually want to use." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
+</head>
+<body>
+
+<div class="page-curtain" data-page-curtain aria-hidden="true">
+  <div class="page-curtain__panel"></div>
+  <span class="page-curtain__label" data-page-curtain-label>About</span>
+</div>
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var curtain = document.querySelector('[data-page-curtain]');
+    if (!curtain) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        curtain.classList.add('is-leaving');
+      });
+    });
+  })();
+</script>
+
+<header class="site-nav">
+  <nav class="site-nav__pill" aria-label="Primary">
+    <a href="index.html" class="site-nav__link" data-nav-link>Halo!</a>
+    <a href="work.html" class="site-nav__link" data-nav-link>Work</a>
+    <a href="about.html" class="site-nav__link is-active" data-nav-link>About</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section about-intro container">
+    <div class="statement">
+      <h1 class="statement__heading">I don't just design products, I build what makes good design possible</h1>
+      <div class="statement__box">
+        <p>Hi, I'm Eka, a Product Design Manager who's spent the last 7+ years turning complex problems into products people actually want to use. I started as a company's first designer. No team, no process, no playbook. So I built all three, and along the way, I discovered something. Whether you're looking for a design leader, a product partner, or someone to shape your brand from the ground up, you're in the right place.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-services container" aria-label="What I do">
+    <h2 class="section-heading">What I do</h2>
+    <div class="about-services__grid">
+
+      <article class="about-service">
+        <div class="about-service__icon"><img src="assets/icons/ic-hash.svg" alt="" /></div>
+        <h3 class="about-service__title">Product Design</h3>
+        <ul class="about-service__list">
+          <li>Mobile Apps</li>
+          <li>Web Apps</li>
+          <li>Design Systems</li>
+          <li>UI/UX Audits</li>
+        </ul>
+      </article>
+
+      <article class="about-service">
+        <div class="about-service__icon"><img src="assets/icons/ic-heart.svg" alt="" /></div>
+        <h3 class="about-service__title">Branding &amp; Visual Identity</h3>
+        <ul class="about-service__list">
+          <li>Brand Strategy</li>
+          <li>Typography &amp; Color Systems</li>
+          <li>Social Media Assets</li>
+          <li>Pitch Decks</li>
+        </ul>
+      </article>
+
+      <article class="about-service">
+        <div class="about-service__icon"><img src="assets/icons/ic-monitor.svg" alt="" /></div>
+        <h3 class="about-service__title">Web Design</h3>
+        <ul class="about-service__list">
+          <li>Vibe Coding</li>
+          <li>No Code Development</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section about-toolkit container" aria-label="What's in my toolkit">
+    <div class="clients__head">
+      <h2 class="section-heading">What's in My Toolkit</h2>
+    </div>
+    <div class="clients__track-wrap">
+      <ul class="clients__track">
+        <li class="clients__logo"><img src="assets/images/logo-figma.png" alt="Figma" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-claude.png" alt="Claude" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-vscode.png" alt="Visual Studio Code" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-google-workspace.png" alt="Google Workspace" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-maze.png" alt="Maze" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-slack.png" alt="Slack" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-confluence.png" alt="Confluence" /></li>
+        <li class="clients__logo"><img src="assets/images/logo-jira.png" alt="Jira" /></li>
+        <!-- duplicated for seamless marquee loop -->
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-figma.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-claude.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-vscode.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-google-workspace.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-maze.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-slack.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-confluence.png" alt="" /></li>
+        <li class="clients__logo" aria-hidden="true"><img src="assets/images/logo-jira.png" alt="" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section about-experience container" aria-label="Professional experience">
+    <h2 class="section-heading">Professional Experience</h2>
+    <div class="experience">
+
+      <div class="experience__item is-open">
+        <button type="button" class="experience__row" aria-expanded="true" aria-controls="exp-gokomodo" data-experience-toggle>
+          <span class="experience__col experience__col--company">Gokomodo Indonesia</span>
+          <span class="experience__col experience__col--role">Product Design Lead</span>
+          <span class="experience__col experience__col--year">Aug 2020 — Present</span>
+        </button>
+        <div class="experience__detail" id="exp-gokomodo">
+          <div class="experience__detail-inner">
+            <p>Joined as Gokomodo's first and only designer. No team, no process, no design system. Built everything from scratch. Over four years, grew into a leadership role while simultaneously growing the team from 1 to 8 across product designers and graphic designers. Led design across five product verticals, including a loyalty platform that has grown to 60,000+ members.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience__item">
+        <button type="button" class="experience__row" aria-expanded="false" aria-controls="exp-docotel" data-experience-toggle>
+          <span class="experience__col experience__col--company">Docotel Group</span>
+          <span class="experience__col experience__col--role">UI/UX Designer</span>
+          <span class="experience__col experience__col--year">Apr 2019 — Aug 2020</span>
+        </button>
+        <div class="experience__detail" id="exp-docotel">
+          <div class="experience__detail-inner">
+            <p>I collaborated closely with Project Managers and Developer teams to create a diverse range of cross-media projects, focusing on UI/UX design for B2C, B2B companies, and government entities. My process involved conducting thorough user research to understand client goals, creating both low-fidelity and high-fidelity designs, and conducting testing to ensure the final results align seamlessly with client objectives.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience__item">
+        <button type="button" class="experience__row" aria-expanded="false" aria-controls="exp-komatsu" data-experience-toggle>
+          <span class="experience__col experience__col--company">Komatsu Marketing Support Indonesia</span>
+          <span class="experience__col experience__col--role">IT Developer</span>
+          <span class="experience__col experience__col--year">Mar 2017 — Feb 2019</span>
+        </button>
+        <div class="experience__detail" id="exp-komatsu">
+          <div class="experience__detail-inner">
+            <p>I actively engage with business users and project managers to enhance operational efficiency and effectiveness. I create actionable insights for dashboard field campaign monitoring, problem reports, and warranty products for heavy equipment units across both web and mobile platforms.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section about-cta container" aria-label="Contact">
+    <div class="statement">
+      <div class="about-cta__intro">
+        <h2 class="statement__heading">Let's Build Something Together</h2>
+        <a class="btn btn--solid" href="mailto:ekaprayoga69@gmail.com">
+          <img src="assets/icons/ic-mail.svg" alt="" />
+          Say Hello
+        </a>
+      </div>
+      <div class="statement__box">
+        <p>Whether you're looking for a design leader to grow your team, a product partner to shape your next big idea, or someone to build a brand people actually trust, I'd love to hear about it.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Eka Prayoga.<br />No pixels were harmed in the making of this site.</p>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

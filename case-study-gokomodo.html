@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building a Digital Loyalty Ecosystem for Indonesian Farmers — Eka Prayoga</title>
+<meta name="description" content="Case study: how Gokomodo's Gokokoin loyalty program grew to 68,000+ members and increased transaction frequency by 150%." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
+</head>
+<body>
+
+<div class="page-curtain" data-page-curtain aria-hidden="true" style="--curtain-bg: #E2EF72; --curtain-color: #212121;">
+  <div class="page-curtain__panel"></div>
+  <span class="page-curtain__label" data-page-curtain-label>Case Study</span>
+</div>
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var curtain = document.querySelector('[data-page-curtain]');
+    if (!curtain) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        curtain.classList.add('is-leaving');
+      });
+    });
+  })();
+</script>
+
+<header class="site-nav">
+  <nav class="site-nav__pill" aria-label="Primary">
+    <a href="index.html" class="site-nav__link" data-nav-link>Halo!</a>
+    <a href="work.html" class="site-nav__link is-active" data-nav-link>Work</a>
+    <a href="about.html" class="site-nav__link" data-nav-link>About</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section case-detail container">
+
+    <div class="case-detail__meta">
+      <span class="case-study__chip">Product Design</span>
+      <span class="case-study__chip">2023</span>
+    </div>
+
+    <h1 class="case-detail__title">Building a Digital Loyalty Ecosystem for Indonesian Farmers</h1>
+
+    <div class="case-detail__banner">
+      <img src="assets/images/case-gokomodo-banner.png" alt="Gokomodo Gokokoin app screens preview" />
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-puzzle-piece.svg" alt="" /></div>
+        <h2 class="section-heading">Context</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>Gokomodo serves farmers across all scales through Gokomart, a network of physical stores where they buy fertilizer, pesticides, and other farming essentials. Transaction volume kept growing, but there was no digital mechanism to retain loyalty or drive repeat order/visits. Without an incentive to keep coming back, <strong>Gokomodo risked losing customers to competitors who'd started a price war with cheaper alternatives.</strong></p>
+          <p>Gokomodo App initiative came directly from top-level management, with three clear goals: <strong>increase transaction frequency, acquire new customers, and build long-term loyalty</strong> within Gokomodo's digital ecosystem.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-tube.svg" alt="" /></div>
+        <h2 class="section-heading">Process and Research</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>As a top-down initiative, I led a design team of 2 product designers and 1 researcher, working within constraints defined by leadership from day one such as timeline, a set of must-have features, and a basic points scheme. To bring structure to the process, I broke it down into two phases: discovery and prioritization.</p>
+          <h3>Discovery</h3>
+          <p>I ran a series of interviews with internal teams (commercial, operations, and key account) to understand in-store customer behavior patterns and identify gaps the app could bridge.</p>
+          <h3>Prioritization</h3>
+          <p>From these interviews, we mapped how often each feature need was mentioned across stakeholders. The diagram below shows the results of this mapping:</p>
+          <img class="case-detail__image" src="assets/images/case-gokomodo-diagram.png" alt="Matrix diagram mapping feature requests by how many stakeholders mentioned each one, from Games (mentioned rarely, by few stakeholders) to Earn Points and Redeem Voucher (mentioned always, by nearly all stakeholders)" />
+          <p class="case-detail__callout"><strong>Key insight:</strong> Customers were already comfortable transacting at Gokomart, but there was nothing pushing them to come back more often. This was the most frequently mentioned point across stakeholders, and it became the basis for building a points-based program (Gokokoin) as the core feature, with voucher redemption and promotions as the main entry point.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-storyboard.svg" alt="" /></div>
+        <h2 class="section-heading">Storyboard: From Regular Customer to Loyal Member</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>This 8-scene storyboard maps out how Gokokoin works. From a customer's first transaction at Gokomart, through claiming a voucher, to coming back again.</p>
+        </div>
+        <img class="case-detail__image" src="assets/images/case-gokomodo-storyboard.png" alt="8-panel storyboard of a farmer named Bambang signing up for Gokomodo at checkout, earning Gokokoin with every purchase, and redeeming a 10% discount voucher on a return visit" />
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-trading-card.svg" alt="" /></div>
+        <h2 class="section-heading">Pivot and Trade-offs</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <h3>Simple Onboarding vs Complete Data Collection</h3>
+          <p>Management initially wanted the sign up flow to capture full customer data such as name, address, land size, commodity type for future marketing segmentation. But talking to cashiers on the ground, I found that a long registration process could make customers frustrated while waiting in line, especially during busy store hours.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> I proposed a minimal sign up (just name and phone number) at the start, with additional data collected gradually through in-app notifications or "complete your profile" missions with gokokoin reward once the user was already active. This meant sacrificing upfront data completeness in exchange for a much higher sign-up conversion rate.</p>
+        </div>
+        <div class="case-detail__box">
+          <h3>Online Order vs Internal Pricing Risk</h3>
+          <p>In the early stages of development, the app was designed with an online ordering feature. Customers could shop directly through the app and pick up their order at Gokomart. However, close to the development phase, one of the C-Level executives asked for this feature to be pulled, since displaying prices in the app risked triggering a price war with other stores or competitors.</p>
+          <p class="case-detail__callout"><strong>Trade-off:</strong> instead of removing the feature, which would've killed one of the app's core value propositions (shopping convenience), I negotiated to keep the product catalog, along with a 'Contact Admin' CTA for the purchase process. This let customers still check product availability. Transactions still happened, just through a more controlled channel, so we avoided the price war risk without losing the product exploration function altogether.</p>
+          <p class="case-detail__caption case-detail__caption--label">Initial Concept vs Final Design</p>
+          <p class="case-detail__caption">The first UI shows a common cart view from the online ordering flow, with a checkout button. In the final design, no prices are displayed. it only shows the total number of products requested, along with a 'Contact Admin' button that redirects to WhatsApp, where customers can request pricing and complete payment manually.</p>
+          <img class="case-detail__image" src="assets/images/case-gokomodo-cart-compare.png" alt="Initial concept cart screen with visible prices and a checkout button, next to the final design's Contact Admin flow that redirects to WhatsApp without displaying prices" />
+        </div>
+      </div>
+    </div>
+
+    <img class="case-detail__showcase" src="assets/images/case-gokomodo-showcase.png" alt="Collage of Gokokoin app screens: spin-the-wheel rewards, voucher redemption, mission checklist, product certification, and GokoMart store locator" />
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-goal.svg" alt="" /></div>
+        <h2 class="section-heading">Result from Q4 2023 - Q2 2026</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <h3>Program Adoption</h3>
+          <div class="case-detail__stats">
+            <div class="case-detail__stat">
+              <p class="case-detail__stat-value">68,000+</p>
+              <p class="case-detail__stat-label">registered members</p>
+            </div>
+            <div class="case-detail__stat">
+              <p class="case-detail__stat-value">6 Billion (42%)</p>
+              <p class="case-detail__stat-label">Gokokoin redemption rate</p>
+            </div>
+            <div class="case-detail__stat">
+              <p class="case-detail__stat-value">14.1 Billion</p>
+              <p class="case-detail__stat-label">Gokokoin in circulation</p>
+            </div>
+            <div class="case-detail__stat">
+              <p class="case-detail__stat-value">14,500+</p>
+              <p class="case-detail__stat-label">vouchers used</p>
+            </div>
+          </div>
+          <p class="case-detail__callout"><strong>Gokokoin Exchange Rate:</strong> 1 Gokokoin equals 1 Rupiah</p>
+        </div>
+        <div class="case-detail__box">
+          <h3>Business Impact</h3>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-label">Transaction Frequency</p>
+            <p class="case-detail__impact-copy"><strong>Increased 150%.</strong> Members shop 5 times/month on average, compared to just 2 times/month for non-members.</p>
+          </div>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-label">New Customer Acquisition</p>
+            <p class="case-detail__impact-copy"><strong>64.3%</strong> of the 68,000+ members are new Gokomart customers, not existing customers who migrated over.</p>
+          </div>
+          <div class="case-detail__impact-card">
+            <p class="case-detail__impact-label">Retention</p>
+            <p class="case-detail__impact-copy"><strong>44% of members placed repeat orders</strong> within their first year, making 4-6 transactions per month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-detail__section">
+      <div class="case-detail__label">
+        <div class="case-detail__icon"><img src="assets/icons/ic-new-product.svg" alt="" /></div>
+        <h2 class="section-heading">Product Evolution Note</h2>
+      </div>
+      <div class="case-detail__card">
+        <div class="case-detail__box">
+          <p>Over the Q4 2023 – Q2 2026 period, we ran 26 iterations. One of the major additional features built to boost business impact was:</p>
+          <h3>Agri Edu (Klinik Tani)</h3>
+          <p>Klinik Tani is an online consultation feature that connects farmers with agronomists via video call to address farming issues. The agronomist helps analyze the problem, provides a diagnosis, and recommends products aimed at increasing revenue and transaction frequency.</p>
+          <img class="case-detail__image" src="assets/images/case-gokomodo-klinik-agri-edu.png" alt="Klinik Tani consultation flow: requesting a consultation, joining the agronomist video call, and viewing the diagnosis with recommended products" />
+          <h3>Online Order (Request for Quotation)</h3>
+          <p>At launch, online ordering only worked through WhatsApp chat. While prices still aren't displayed even now, members can send requests, and the store admin responds with a quotation and handles payment directly within the platform.</p>
+          <img class="case-detail__image" src="assets/images/case-gokomodo-klinik-online-order.png" alt="Request for quotation flow: cart checkout, order confirmation, transaction history, admin's price offer, and payment screen" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Eka Prayoga.<br />No pixels were harmed in the making of this site.</p>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
