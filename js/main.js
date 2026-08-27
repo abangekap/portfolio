@@ -295,6 +295,21 @@
       startAutoplay();
     });
 
+    // Chromium can evict this track's GPU-composited layer (from the
+    // transform-based slide transition) while its tab is backgrounded, then
+    // fail to repaint the current slide's images when the tab comes back —
+    // they stay blank until a manual reload even though they're fully
+    // loaded. Forcing a reflow on the viewport when the tab regains
+    // visibility works around it.
+    const caseStudyViewport = caseStudyTrack.parentElement;
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState !== 'visible') return;
+      const display = caseStudyViewport.style.display;
+      caseStudyViewport.style.display = 'none';
+      void caseStudyViewport.offsetHeight;
+      caseStudyViewport.style.display = display;
+    });
+
     updateDots(true);
     updateSlideInertness();
     startAutoplay();
